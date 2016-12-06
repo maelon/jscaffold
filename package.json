@@ -3,6 +3,14 @@
   "version": "1.0.1",
   "description": "A spa webpack scaffold with asynchronous modules loading",
   "main": "index.js",
+  "bin": {
+      "jscaffold": "bin/scaffold"
+  },
+  "keywords": [
+    "webpack",
+    "cli",
+    "spa"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
