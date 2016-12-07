@@ -108,10 +108,11 @@ function run () {
         checkVersion(function () {
             if (!hasSlash) {
                 // use official templates
-                var officialTemplate = 'maelon/jscaffold-templates-' + template;
-                if (template.indexOf('#') !== -1) {
-                    downloadAndGenerate(officialTemplate);
-                } else {
+                var officialTemplate = 'maelon/jscaffold-template-' + template;
+                downloadAndGenerate(officialTemplate);
+                //if (template.indexOf('#') !== -1) {
+                    //downloadAndGenerate(officialTemplate);
+                //} else {
                     //if (template.indexOf('-2.0') !== -1) {
                         //warnings.v2SuffixTemplatesDeprecated(template, inPlace ? '' : name);
                         //return;
@@ -119,7 +120,7 @@ function run () {
 
                     //warnings.v2BranchIsNowDefault(template, inPlace ? '' : name);
                     //downloadAndGenerate(officialTemplate);
-                }
+                //}
             } else {
                 downloadAndGenerate(template)
             }
@@ -134,6 +135,7 @@ function run () {
  */
 
 function downloadAndGenerate (template) {
+    console.log(template);
     var tmp = os.tmpdir() + '/jscaffold-template-' + uid();
     var spinner = ora('downloading template');
     spinner.start();

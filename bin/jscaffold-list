@@ -11,7 +11,7 @@ var chalk = require('chalk');
 console.log();
 process.on('exit', function () {
     console.log();
-}):
+});
 
 /**
  * List repos.
