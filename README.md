@@ -16,7 +16,7 @@ npm install -g jscaffold
 * init
 
 ```bash
-jscaffold init \<tempate-name\> \<project-name\>
+jscaffold init <tempate-name> <project-name>
 ```
 
 `tempate-name`: now just webpack, more template coming soon
@@ -32,8 +32,6 @@ This will list the templates available.
 
 ### workflow for example:
 
-In a vue project with webpack, we use `require.ensure` to ___split code___ , our templates will build project into modules with a `vinfo.json`.
-
-The `vinfo.json` describes builded version, builded date, and builded ___modules list width chunckhash___ for loading in browser.
-
-The `index.html` in distribute directory will load the `vinfo.json` for ___loading modules list asynchronously in it in sequence___. This is the point.
+1. In a vue project with webpack, we use `require.ensure` to ___split code___ , our templates will build project into modules with a `vinfo.json`.
+2. The `vinfo.json` describes builded version, builded date, and builded ___modules list width chunckhash___ for loading in browser.
+3. The `index.html` in distribute directory will load the `vinfo.json` for ___loading modules list asynchronously in it in sequence___. This is the point.
