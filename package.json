@@ -1,11 +1,11 @@
 {
   "name": "jscaffold",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A spa webpack scaffold with asynchronous modules loading",
   "preferGlobal": true,
   "main": "index.js",
   "bin": {
-      "jscaffold": "bin/scaffold"
+      "jscaffold": "bin/jscaffold"
   },
   "keywords": [
     "webpack",
