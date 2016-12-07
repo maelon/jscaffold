@@ -1,6 +1,6 @@
 ## A spa webpack scaffold with asynchronous modules loading
 
-This tool just likes vue-cli, but with new feature: asynchronous modules loading.
+This tool just likes vue-cli, but with new feature: asynchronous modules loading templates.
 
 ### installation
 
@@ -20,3 +20,8 @@ npm install -g jscaffold
 
 This will list the templates available.
 
+### workflow for example:
+
+In a vue project with webpack, we use `require.ensure` to ___split code___ , our templates will build project into modules with a `vinfo.json`.
+The `vinfo.json` describes builded version, builded date, and builded ___modules list width chunckhash___ for loading in browser.
+The `index.html` in distribute directory will load the `vinfo.json` for ___loading modules list asynchronously in it in sequence___. This is the point.
