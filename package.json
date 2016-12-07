@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/maelon/jscaffold/issues"
   },
-  "homepage": "https://github.com/maelon/jscaffold#readme"
+  "homepage": "https://github.com/maelon/jscaffold#readme",
+  "engines": {
+      "node": ">=4.0.0"
+  }
 }
